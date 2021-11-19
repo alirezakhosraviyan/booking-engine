@@ -1,0 +1,79 @@
+@import url("./fonts/IRANSans/font-face.css");
+@import url("./fonts/Roboto/font-face.css");
+
+html {
+    &[lang=fa-IR] .v-application{
+        font-family: IRANSans, sans-serif !important;
+        * {
+            font-family: IRANSans, sans-serif !important;
+        }
+    }
+    &[lang=en-US] .v-application{
+        font-family: Roboto, sans-serif !important;
+        * {
+            font-family: Roboto, sans-serif !important;
+        }
+    }
+}
+
+.nuxt-link {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+.v-menu__content {
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+                0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+.v-stepper__wrapper {
+    overflow: visible !important
+}
+
+.vpd-content {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+    transition-property: all !important;
+    transition-duration: 0.3s !important;
+    transition-timing-function: ease-in-out !important;
+}
+
+.row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 1904px) {
+    .container:not(.container--fluid) {
+        max-width: 1280px !important;
+    }
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}
+
+.leaflet-pane {
+    z-index: 4 !important;
+}
+
+.leaflet-control {
+    display: none !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.v-textarea.h-100 {
+    .v-input__slot, .v-input__control {
+        height: 100%;
+    }
+}
